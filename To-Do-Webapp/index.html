@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Todo List </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="task-input">
+            <i class="fa fa-list-alt" aria-hidden="true"></i>
+            <input type="text" placeholder="Add a new task">
+        </div>
+        <div class="outer">
+            <div class="wrapper">
+                <div class="controls">
+                    <div class="filters">
+                        <span class="active" id="all">All</span>
+                    </div>
+                    <button class="clear-btn">Clear All</button>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="controls">
+                    <div class="filters">
+                        <span id="pending">Pending</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="controls">
+                    <div class="filters">
+                        <span id="completed">Completed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tasks">
+            <ul class="task-box"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
